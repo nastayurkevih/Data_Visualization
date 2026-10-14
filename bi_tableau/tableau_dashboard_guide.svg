@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1220" viewBox="0 0 1420 1220">
+<rect width="1420" height="1220" fill="#F2F5F8"/>
+<style>text{font-family:Arial,"DejaVu Sans",sans-serif} .mono{font-family:Consolas,monospace}</style>
+<text x="40.0" y="46.0" font-size="28" fill="#1D2A35" font-weight="700" text-anchor="start">SOC | Макет первого Tableau-дашборда</text>
+<text x="40.0" y="75.0" font-size="14" fill="#5B6B78" font-weight="400" text-anchor="start">Карточек в данных: 240 295  •  Все визуализации используют COUNTD(incident_id)</text>
+<text x="1380.0" y="47.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="end">BI • описываем данные, не предсказываем класс</text>
+<rect x="40.0" y="105.0" width="670.0" height="490.0" rx="18" fill="#FFFFFF" stroke="#E1E7EC"/><text x="64.0" y="144.0" font-size="21" fill="#1D2A35" font-weight="700" text-anchor="start">1  Карточки по вердиктам</text><text x="64.0" y="171.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Кольцевая диаграмма • сравнение долей итоговых решений</text><line x1="64" y1="187" x2="686" y2="187" stroke="#E1E7EC"/>
+<path d="M 260.00 225.00 A 142 142 0 1 1 158.31 466.11 L 204.14 421.44 A 78 78 0 1 0 260.00 289.00 Z" fill="#2F6B8A" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 158.31 466.11 A 142 142 0 0 1 148.01 279.70 L 198.48 319.04 A 78 78 0 0 0 204.14 421.44 Z" fill="#D97941" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 148.01 279.70 A 142 142 0 0 1 237.29 226.83 L 247.52 290.00 A 78 78 0 0 0 198.48 319.04 Z" fill="#4C956C" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 237.29 226.83 A 142 142 0 0 1 258.79 225.01 L 259.34 289.00 A 78 78 0 0 0 247.52 290.00 Z" fill="#8A6FB0" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 258.79 225.01 A 142 142 0 0 1 259.97 225.00 L 259.98 289.00 A 78 78 0 0 0 259.34 289.00 Z" fill="#C64D5B" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 259.97 225.00 A 142 142 0 0 1 260.00 225.00 L 260.00 289.00 A 78 78 0 0 0 259.98 289.00 Z" fill="#8B8D54" stroke="#FFFFFF" stroke-width="2"/>
+<path d="M 260.00 225.00 A 142 142 0 0 1 260.00 225.00 L 260.00 289.00 A 78 78 0 0 0 260.00 289.00 Z" fill="#4C9A9A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="260.0" y="360.0" font-size="24" fill="#1D2A35" font-weight="700" text-anchor="middle">240 295</text>
+<text x="260.0" y="384.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="middle">карточек</text>
+<rect x="445.0" y="244.0" width="12.0" height="12.0" rx="3" fill="#2F6B8A" stroke="none"/><text x="465.0" y="255.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">False Positive: 150 675</text><rect x="445.0" y="270.0" width="12.0" height="12.0" rx="3" fill="#D97941" stroke="none"/><text x="465.0" y="281.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не указан: 54 870</text><rect x="445.0" y="296.0" width="12.0" height="12.0" rx="3" fill="#4C956C" stroke="none"/><text x="465.0" y="307.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Решён: 28 606</text><rect x="445.0" y="322.0" width="12.0" height="12.0" rx="3" fill="#8A6FB0" stroke="none"/><text x="465.0" y="333.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Дубликат: 5 819</text><rect x="555.0" y="244.0" width="12.0" height="12.0" rx="3" fill="#C64D5B" stroke="none"/><text x="575.0" y="255.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не решён: 316</text><rect x="555.0" y="270.0" width="12.0" height="12.0" rx="3" fill="#8B8D54" stroke="none"/><text x="575.0" y="281.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт по совокупности инцидентов: 8</text><rect x="555.0" y="296.0" width="12.0" height="12.0" rx="3" fill="#4C9A9A" stroke="none"/><text x="575.0" y="307.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт из родительской атаки: 1</text>
+<text x="64.0" y="535.0" font-size="10" fill="#5B6B78" font-weight="700" text-anchor="start">ПОЛЯ И ПОЛОЖЕНИЕ В TABLEAU</text>
+<text x="64.0" y="558.0" font-size="12" fill="#1D2A35" font-weight="400" text-anchor="start">verdict → Цвет; incident_id → Угол (COUNTD) и Метка (COUNTD)</text>
+<text x="64.0" y="580.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="start">«Не указан» — неизвестный исход, не угроза и не безопасная карточка.</text>
+<rect x="710.0" y="105.0" width="670.0" height="490.0" rx="18" fill="#FFFFFF" stroke="#E1E7EC"/><text x="734.0" y="144.0" font-size="21" fill="#1D2A35" font-weight="700" text-anchor="start">2  Динамика по месяцам</text><text x="734.0" y="171.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Линейный график • число карточек по дате и вердикту</text><line x1="734" y1="187" x2="1356" y2="187" stroke="#E1E7EC"/>
+<line x1="772" y1="390.0" x2="1337" y2="390.0" stroke="#E1E7EC"/>
+<text x="762.0" y="394.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="end">0</text>
+<line x1="772" y1="346.25" x2="1337" y2="346.25" stroke="#E1E7EC"/>
+<text x="762.0" y="350.2" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="end">7 623</text>
+<line x1="772" y1="302.5" x2="1337" y2="302.5" stroke="#E1E7EC"/>
+<text x="762.0" y="306.5" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="end">15 246</text>
+<line x1="772" y1="258.75" x2="1337" y2="258.75" stroke="#E1E7EC"/>
+<text x="762.0" y="262.8" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="end">22 868</text>
+<line x1="772" y1="215.0" x2="1337" y2="215.0" stroke="#E1E7EC"/>
+<text x="762.0" y="219.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="end">30 491</text>
+<text x="772.0" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-04</text>
+<text x="805.2" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-05</text>
+<text x="838.5" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-06</text>
+<text x="871.7" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-07</text>
+<text x="904.9" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-08</text>
+<text x="938.2" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-09</text>
+<text x="971.4" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-10</text>
+<text x="1004.6" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-11</text>
+<text x="1037.9" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2024-12</text>
+<text x="1071.1" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-01</text>
+<text x="1104.4" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-02</text>
+<text x="1137.6" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-03</text>
+<text x="1170.8" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-04</text>
+<text x="1204.1" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-05</text>
+<text x="1237.3" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-06</text>
+<text x="1270.5" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-07</text>
+<text x="1303.8" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-08</text>
+<text x="1337.0" y="410.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="middle">2025-09</text>
+<path d="M 772.0 390.0 L 805.2 371.1 L 838.5 351.7 L 871.7 324.1 L 904.9 318.5 L 938.2 285.3 L 971.4 286.0 L 1004.6 327.6 L 1037.9 341.1 L 1071.1 333.0 L 1104.4 338.3 L 1137.6 352.6 L 1170.8 329.2 L 1204.1 359.2 L 1237.3 353.0 L 1270.5 365.4 L 1303.8 346.2 L 1337.0 382.8" fill="none" stroke="#2F6B8A" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 382.6 L 838.5 215.0 L 871.7 301.8 L 904.9 350.2 L 938.2 388.4 L 971.4 388.0 L 1004.6 390.0 L 1037.9 390.0 L 1071.1 390.0 L 1104.4 389.9 L 1137.6 390.0 L 1170.8 390.0 L 1204.1 390.0 L 1237.3 390.0 L 1270.5 390.0 L 1303.8 389.7 L 1337.0 389.6" fill="none" stroke="#D97941" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 390.0 L 838.5 386.4 L 871.7 375.6 L 904.9 369.6 L 938.2 350.0 L 971.4 352.0 L 1004.6 378.6 L 1037.9 382.4 L 1071.1 385.9 L 1104.4 386.9 L 1137.6 388.2 L 1170.8 388.3 L 1204.1 388.4 L 1237.3 388.1 L 1270.5 384.8 L 1303.8 381.3 L 1337.0 389.2" fill="none" stroke="#4C956C" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 390.0 L 838.5 389.3 L 871.7 368.3 L 904.9 388.0 L 938.2 387.3 L 971.4 386.9 L 1004.6 389.6 L 1037.9 389.6 L 1071.1 389.7 L 1104.4 389.9 L 1137.6 389.0 L 1170.8 389.8 L 1204.1 389.8 L 1237.3 389.8 L 1270.5 389.9 L 1303.8 389.7 L 1337.0 389.9" fill="none" stroke="#8A6FB0" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 390.0 L 838.5 390.0 L 871.7 388.8 L 904.9 389.8 L 938.2 389.8 L 971.4 389.9 L 1004.6 390.0 L 1037.9 389.9 L 1071.1 390.0 L 1104.4 390.0 L 1137.6 390.0 L 1170.8 390.0 L 1204.1 390.0 L 1237.3 390.0 L 1270.5 390.0 L 1303.8 390.0 L 1337.0 390.0" fill="none" stroke="#C64D5B" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 390.0 L 838.5 390.0 L 871.7 390.0 L 904.9 390.0 L 938.2 390.0 L 971.4 390.0 L 1004.6 390.0 L 1037.9 390.0 L 1071.1 390.0 L 1104.4 390.0 L 1137.6 390.0 L 1170.8 390.0 L 1204.1 390.0 L 1237.3 390.0 L 1270.5 390.0 L 1303.8 390.0 L 1337.0 390.0" fill="none" stroke="#8B8D54" stroke-width="2.4"/>
+<path d="M 772.0 390.0 L 805.2 390.0 L 838.5 390.0 L 871.7 390.0 L 904.9 390.0 L 938.2 390.0 L 971.4 390.0 L 1004.6 390.0 L 1037.9 390.0 L 1071.1 390.0 L 1104.4 390.0 L 1137.6 390.0 L 1170.8 390.0 L 1204.1 390.0 L 1237.3 390.0 L 1270.5 390.0 L 1303.8 390.0 L 1337.0 390.0" fill="none" stroke="#4C9A9A" stroke-width="2.4"/>
+<rect x="772.0" y="414.0" width="12.0" height="12.0" rx="3" fill="#2F6B8A" stroke="none"/><text x="792.0" y="425.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">False Positive: 150 675</text><rect x="772.0" y="440.0" width="12.0" height="12.0" rx="3" fill="#D97941" stroke="none"/><text x="792.0" y="451.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не указан: 54 870</text><rect x="772.0" y="466.0" width="12.0" height="12.0" rx="3" fill="#4C956C" stroke="none"/><text x="792.0" y="477.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Решён: 28 606</text><rect x="772.0" y="492.0" width="12.0" height="12.0" rx="3" fill="#8A6FB0" stroke="none"/><text x="792.0" y="503.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Дубликат: 5 819</text><rect x="1052.0" y="414.0" width="12.0" height="12.0" rx="3" fill="#C64D5B" stroke="none"/><text x="1072.0" y="425.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не решён: 316</text><rect x="1052.0" y="440.0" width="12.0" height="12.0" rx="3" fill="#8B8D54" stroke="none"/><text x="1072.0" y="451.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт по совокупности инцидентов: 8</text><rect x="1052.0" y="466.0" width="12.0" height="12.0" rx="3" fill="#4C9A9A" stroke="none"/><text x="1072.0" y="477.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт из родительской атаки: 1</text>
+<text x="734.0" y="535.0" font-size="10" fill="#5B6B78" font-weight="700" text-anchor="start">ПОЛЯ И ПОЛОЖЕНИЕ В TABLEAU</text>
+<text x="734.0" y="558.0" font-size="12" fill="#1D2A35" font-weight="400" text-anchor="start">incident_date → Столбцы (Месяц); incident_id → Строки (COUNTD)</text>
+<text x="734.0" y="580.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="start">verdict → Цвет; тип метки → Линия. Месяц должен быть упорядочен по времени.</text>
+<rect x="40.0" y="600.0" width="670.0" height="490.0" rx="18" fill="#FFFFFF" stroke="#E1E7EC"/><text x="64.0" y="639.0" font-size="21" fill="#1D2A35" font-weight="700" text-anchor="start">3  Карточки по источникам</text><text x="64.0" y="666.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Горизонтальные составные столбцы • источники и вердикты</text><line x1="64" y1="682" x2="686" y2="682" stroke="#E1E7EC"/>
+<text x="205.0" y="720.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">MaxPatrol SIEM</text>
+<rect x="215.0" y="705.0" width="199.5" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="414.5" y="705.0" width="168.8" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="583.3" y="705.0" width="55.6" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="638.9" y="705.0" width="15.2" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="654.1" y="705.0" width="0.9" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<rect x="655.0" y="705.0" width="0.0" height="20.0" rx="3" fill="#8B8D54" stroke="none"/>
+<rect x="655.0" y="705.0" width="0.0" height="20.0" rx="3" fill="#4C9A9A" stroke="none"/>
+<text x="663.0" y="720.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">142 549</text>
+<text x="205.0" y="751.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Ankey SIEM NG</text>
+<rect x="215.0" y="736.0" width="265.2" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="480.2" y="736.0" width="0.5" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="480.7" y="736.0" width="32.6" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="513.3" y="736.0" width="2.7" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="516.0" y="736.0" width="0.1" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<rect x="516.1" y="736.0" width="0.0" height="20.0" rx="3" fill="#8B8D54" stroke="none"/>
+<text x="524.1" y="751.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">97 551</text>
+<text x="205.0" y="782.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Ручной ввод</text>
+<rect x="215.0" y="767.0" width="0.3" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="215.3" y="767.0" width="0.1" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="215.3" y="767.0" width="0.1" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<text x="223.4" y="782.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">126</text>
+<text x="205.0" y="813.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Почта</text>
+<rect x="215.0" y="798.0" width="0.1" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="215.1" y="798.0" width="0.0" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<text x="223.1" y="813.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">35</text>
+<text x="205.0" y="844.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Ankey SIEM NG~~||~~Max</text>
+<rect x="215.0" y="829.0" width="0.1" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="215.1" y="829.0" width="0.0" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<text x="223.1" y="844.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">29</text>
+<text x="205.0" y="875.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Не указано</text>
+<rect x="215.0" y="860.0" width="0.0" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<text x="223.0" y="875.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">5</text>
+<rect x="230.0" y="909.0" width="12.0" height="12.0" rx="3" fill="#2F6B8A" stroke="none"/><text x="250.0" y="920.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">False Positive: 150 675</text><rect x="230.0" y="935.0" width="12.0" height="12.0" rx="3" fill="#D97941" stroke="none"/><text x="250.0" y="946.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не указан: 54 870</text><rect x="230.0" y="961.0" width="12.0" height="12.0" rx="3" fill="#4C956C" stroke="none"/><text x="250.0" y="972.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Решён: 28 606</text><rect x="230.0" y="987.0" width="12.0" height="12.0" rx="3" fill="#8A6FB0" stroke="none"/><text x="250.0" y="998.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Дубликат: 5 819</text><rect x="445.0" y="909.0" width="12.0" height="12.0" rx="3" fill="#C64D5B" stroke="none"/><text x="465.0" y="920.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не решён: 316</text><rect x="445.0" y="935.0" width="12.0" height="12.0" rx="3" fill="#8B8D54" stroke="none"/><text x="465.0" y="946.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт по совокупности инцидентов: 8</text><rect x="445.0" y="961.0" width="12.0" height="12.0" rx="3" fill="#4C9A9A" stroke="none"/><text x="465.0" y="972.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт из родительской атаки: 1</text>
+<text x="64.0" y="1030.0" font-size="10" fill="#5B6B78" font-weight="700" text-anchor="start">ПОЛЯ И ПОЛОЖЕНИЕ В TABLEAU</text>
+<text x="64.0" y="1053.0" font-size="12" fill="#1D2A35" font-weight="400" text-anchor="start">source_product → Строки; incident_id → Столбцы (COUNTD)</text>
+<text x="64.0" y="1075.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="start">verdict → Цвет; сортировка источников по убыванию числа карточек.</text>
+<rect x="710.0" y="600.0" width="670.0" height="490.0" rx="18" fill="#FFFFFF" stroke="#E1E7EC"/><text x="734.0" y="639.0" font-size="21" fill="#1D2A35" font-weight="700" text-anchor="start">4  Карточки по критичности</text><text x="734.0" y="666.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Столбцы • сравнение критичности с разбивкой по вердиктам</text><line x1="734" y1="682" x2="1356" y2="682" stroke="#E1E7EC"/>
+<text x="860.0" y="720.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Средняя</text>
+<rect x="870.0" y="705.0" width="313.3" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="1183.3" y="705.0" width="55.6" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="1239.0" y="705.0" width="60.3" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="1299.3" y="705.0" width="10.1" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="1309.3" y="705.0" width="0.6" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<rect x="1310.0" y="705.0" width="0.0" height="20.0" rx="3" fill="#8B8D54" stroke="none"/>
+<text x="1318.0" y="720.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">158 159</text>
+<text x="860.0" y="751.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Высокая</text>
+<rect x="870.0" y="736.0" width="78.1" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="948.1" y="736.0" width="32.9" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="980.9" y="736.0" width="14.4" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="995.3" y="736.0" width="1.2" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="996.6" y="736.0" width="0.0" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<text x="1004.6" y="751.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">45 510</text>
+<text x="860.0" y="782.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Низкая</text>
+<rect x="870.0" y="767.0" width="24.8" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="894.8" y="767.0" width="55.8" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="950.7" y="767.0" width="4.8" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="955.4" y="767.0" width="4.8" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="960.2" y="767.0" width="0.2" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<rect x="960.4" y="767.0" width="0.0" height="20.0" rx="3" fill="#4C9A9A" stroke="none"/>
+<text x="968.4" y="782.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">32 497</text>
+<text x="860.0" y="813.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Критическая</text>
+<rect x="870.0" y="798.0" width="2.8" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="872.8" y="798.0" width="8.3" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="881.1" y="798.0" width="0.1" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<rect x="881.2" y="798.0" width="0.1" height="20.0" rx="3" fill="#8A6FB0" stroke="none"/>
+<rect x="881.3" y="798.0" width="0.0" height="20.0" rx="3" fill="#C64D5B" stroke="none"/>
+<text x="889.3" y="813.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">4 079</text>
+<text x="860.0" y="844.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="end">Отсутствует</text>
+<rect x="870.0" y="829.0" width="0.1" height="20.0" rx="3" fill="#2F6B8A" stroke="none"/>
+<rect x="870.1" y="829.0" width="0.0" height="20.0" rx="3" fill="#D97941" stroke="none"/>
+<rect x="870.1" y="829.0" width="0.0" height="20.0" rx="3" fill="#4C956C" stroke="none"/>
+<text x="878.1" y="844.0" font-size="10" fill="#5B6B78" font-weight="400" text-anchor="start">50</text>
+<rect x="880.0" y="909.0" width="12.0" height="12.0" rx="3" fill="#2F6B8A" stroke="none"/><text x="900.0" y="920.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">False Positive: 150 675</text><rect x="880.0" y="935.0" width="12.0" height="12.0" rx="3" fill="#D97941" stroke="none"/><text x="900.0" y="946.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не указан: 54 870</text><rect x="880.0" y="961.0" width="12.0" height="12.0" rx="3" fill="#4C956C" stroke="none"/><text x="900.0" y="972.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Решён: 28 606</text><rect x="880.0" y="987.0" width="12.0" height="12.0" rx="3" fill="#8A6FB0" stroke="none"/><text x="900.0" y="998.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Дубликат: 5 819</text><rect x="1105.0" y="909.0" width="12.0" height="12.0" rx="3" fill="#C64D5B" stroke="none"/><text x="1125.0" y="920.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Не решён: 316</text><rect x="1105.0" y="935.0" width="12.0" height="12.0" rx="3" fill="#8B8D54" stroke="none"/><text x="1125.0" y="946.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт по совокупности инцидентов: 8</text><rect x="1105.0" y="961.0" width="12.0" height="12.0" rx="3" fill="#4C9A9A" stroke="none"/><text x="1125.0" y="972.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">Закрыт из родительской атаки: 1</text>
+<text x="734.0" y="1030.0" font-size="10" fill="#5B6B78" font-weight="700" text-anchor="start">ПОЛЯ И ПОЛОЖЕНИЕ В TABLEAU</text>
+<text x="734.0" y="1053.0" font-size="12" fill="#1D2A35" font-weight="400" text-anchor="start">severity → Строки; incident_id → Столбцы (COUNTD)</text>
+<text x="734.0" y="1075.0" font-size="11" fill="#5B6B78" font-weight="400" text-anchor="start">verdict → Цвет. Это распределение карточек, не доказательство угрозы.</text>
+<text x="40.0" y="1155.0" font-size="13" fill="#1D2A35" font-weight="700" text-anchor="start">Важно: incident_count — исходные инциденты внутри карточки; для количества карточек используйте только COUNTD(incident_id).</text>
+<text x="40.0" y="1182.0" font-size="12" fill="#5B6B78" font-weight="400" text-anchor="start">ML-поле is_false_positive не используется в этих BI-графиках. «Не указан» показывается как отдельный неизвестный исход.</text>
+</svg>

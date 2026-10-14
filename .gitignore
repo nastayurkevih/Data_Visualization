@@ -1,0 +1,15 @@
+# Локальные данные
+Dataset/*.parquet
+data/processed/*.parquet
+data/processed/*.csv
+
+# Служебные файлы и окружения
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+
+docs/*.pdf
+docs/*.docx
+bi_tableau/*.twbr

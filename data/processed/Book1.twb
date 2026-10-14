@@ -1,0 +1,746 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='09e5fb53468cd20c96bfdf015731aca4f9377ab65b2a295fe6e469b1f907bf33' _.fcp.WorkbookFingerprinting.true...creator-author-id='09e5fb53468cd20c96bfdf015731aca4f9377ab65b2a295fe6e469b1f907bf33' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='8313193a3d4e49ec9b9157ed74d0a9c6cdd6dc838d9254925989add619e27313' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='8313193a3d4e49ec9b9157ed74d0a9c6cdd6dc838d9254925989add619e27313' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_incidents' inline='true' name='federated.0b4942f0igqa8z166xxih0afx0id' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_incidents' name='textscan.1cok0n10awxee616sfbqv01k835q'>
+            <connection class='textscan' directory='C:/Users/пользователь/Documents/visual_analys/data/processed' filename='tableau_incidents.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1cok0n10awxee616sfbqv01k835q' name='tableau_incidents.csv' table='[tableau_incidents#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=';'>
+            <column datatype='integer' name='incident_id' ordinal='0' />
+            <column datatype='string' name='created_at_utc' ordinal='1' />
+            <column datatype='date' name='incident_date' ordinal='2' />
+            <column datatype='string' name='verdict' ordinal='3' />
+            <column datatype='integer' name='is_false_positive' ordinal='4' />
+            <column datatype='string' name='incident_type' ordinal='5' />
+            <column datatype='string' name='severity' ordinal='6' />
+            <column datatype='string' name='source_severity' ordinal='7' />
+            <column datatype='string' name='source_product' ordinal='8' />
+            <column datatype='string' name='resolution_team' ordinal='9' />
+            <column datatype='string' name='response_phase' ordinal='10' />
+            <column datatype='string' name='detection_name' ordinal='11' />
+            <column datatype='real' name='incident_count' ordinal='12' />
+            <column datatype='string' name='closed_at_utc' ordinal='13' />
+            <column datatype='integer' name='sla_resolution_raw' ordinal='14' />
+            <column datatype='integer' name='sla_acknowledgement_raw' ordinal='15' />
+            <column datatype='integer' name='calendar_year' ordinal='16' />
+            <column datatype='integer' name='calendar_month' ordinal='17' />
+            <column datatype='integer' name='calendar_quarter' ordinal='18' />
+            <column datatype='integer' name='calendar_week' ordinal='19' />
+            <column datatype='integer' name='calendar_weekday' ordinal='20' />
+            <column datatype='integer' name='calendar_day_type' ordinal='21' />
+            <column datatype='date' name='created_date' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incident_id]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_utc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at_utc]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>created_at_utc</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[incident_date]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verdict]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>verdict</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_false_positive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_false_positive]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>is_false_positive</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_type]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[severity]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>severity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_severity]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>source_severity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_product]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>source_product</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resolution_team]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>resolution_team</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response_phase</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response_phase]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>response_phase</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_name]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>detection_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[incident_count]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closed_at_utc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[closed_at_utc]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>closed_at_utc</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sla_resolution_raw</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sla_resolution_raw]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>sla_resolution_raw</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sla_acknowledgement_raw</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sla_acknowledgement_raw]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>sla_acknowledgement_raw</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_month]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_month</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_quarter]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_quarter</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_week]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_week</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_weekday]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_weekday</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_day_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_day_type]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_day_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[created_date]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>created_date</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_incidents.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[calendar_month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_quarter]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_week]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column datatype='integer' default-format='n#,##0,K;-#,##0,K' name='[incident_id]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+      <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:verdict:nk]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>&quot;Не указан&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;False Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Закрыт из родительской атаки&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Решён&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Дубликат&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_incidents.csv' id='tableau_incidents.csv_D929C0EB1D0F4CCE9120F8B3D9E67512'>
+            <properties context=''>
+              <relation connection='textscan.1cok0n10awxee616sfbqv01k835q' name='tableau_incidents.csv' table='[tableau_incidents#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=';'>
+                  <column datatype='integer' name='incident_id' ordinal='0' />
+                  <column datatype='string' name='created_at_utc' ordinal='1' />
+                  <column datatype='date' name='incident_date' ordinal='2' />
+                  <column datatype='string' name='verdict' ordinal='3' />
+                  <column datatype='integer' name='is_false_positive' ordinal='4' />
+                  <column datatype='string' name='incident_type' ordinal='5' />
+                  <column datatype='string' name='severity' ordinal='6' />
+                  <column datatype='string' name='source_severity' ordinal='7' />
+                  <column datatype='string' name='source_product' ordinal='8' />
+                  <column datatype='string' name='resolution_team' ordinal='9' />
+                  <column datatype='string' name='response_phase' ordinal='10' />
+                  <column datatype='string' name='detection_name' ordinal='11' />
+                  <column datatype='real' name='incident_count' ordinal='12' />
+                  <column datatype='string' name='closed_at_utc' ordinal='13' />
+                  <column datatype='integer' name='sla_resolution_raw' ordinal='14' />
+                  <column datatype='integer' name='sla_acknowledgement_raw' ordinal='15' />
+                  <column datatype='integer' name='calendar_year' ordinal='16' />
+                  <column datatype='integer' name='calendar_month' ordinal='17' />
+                  <column datatype='integer' name='calendar_quarter' ordinal='18' />
+                  <column datatype='integer' name='calendar_week' ordinal='19' />
+                  <column datatype='integer' name='calendar_weekday' ordinal='20' />
+                  <column datatype='integer' name='calendar_day_type' ordinal='21' />
+                  <column datatype='date' name='created_date' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>donut&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_incidents' name='federated.0b4942f0igqa8z166xxih0afx0id' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0b4942f0igqa8z166xxih0afx0id'>
+            <column caption='AVG(0)' datatype='real' name='[Calculation_1365648842137601]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='AVG(0)' />
+            </column>
+            <column caption='avg(0)' datatype='real' name='[Calculation_1365648851439619]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column-instance column='[incident_id]' derivation='CountD' name='[ctd:incident_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[verdict]' derivation='CountD' name='[ctd:verdict:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0,K;-#,##0,K' name='[incident_id]' role='dimension' type='ordinal' />
+            <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1365648842137601]' derivation='User' name='[usr:Calculation_1365648842137601:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1365648851439619]' derivation='User' name='[usr:Calculation_1365648851439619:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0b4942f0igqa8z166xxih0afx0id].[none:verdict:nk]' direction='DESC' using='[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:incident_id:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648842137601:qk]' field-type='quantitative' max='0.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648851439619:qk]' field-type='quantitative' fold='true' max='0.0' min='0.0' range-type='fixed' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648842137601:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648851439619:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='1104' />
+            <format attr='cell-h' value='1104' />
+            <format attr='cell' value='138' />
+            <format attr='cell-q' value='690' />
+            <format attr='text-format' field='[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:incident_id:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6e6e6' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648842137601:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0b4942f0igqa8z166xxih0afx0id].[none:verdict:nk]' />
+              <wedge-size column='[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:incident_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6e6e6' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648851439619:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:incident_id:qk]' />
+              <text column='[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:verdict:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='15'><![CDATA[<[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:incident_id:qk]>]]></run>
+                <run>Æ </run>
+                <run bold='true' italic='true'>инциденты</run>
+                <run>Æ &#10;</run>
+                <run fontsize='12'><![CDATA[<[federated.0b4942f0igqa8z166xxih0afx0id].[ctd:verdict:qk]>]]></run>
+                <run>Æ  </run>
+                <run bold='true' italic='true'>вердикты</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.42779004573822021' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6e6e6' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648842137601:qk] + [federated.0b4942f0igqa8z166xxih0afx0id].[usr:Calculation_1365648851439619:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{61BD3C96-1CA6-4F91-9D11-815B7DA9A0A1}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0b4942f0igqa8z166xxih0afx0id].[none:verdict:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b4942f0igqa8z166xxih0afx0id].[none:incident_id:ok]</field>
+            <field>[federated.0b4942f0igqa8z166xxih0afx0id].[none:verdict:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{68CC4B48-7DC3-47B7-9643-BF70CC16D98A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      7CcVbcR5YzAAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

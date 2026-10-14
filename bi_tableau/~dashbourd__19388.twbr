@@ -1,0 +1,1321 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='09e5fb53468cd20c96bfdf015731aca4f9377ab65b2a295fe6e469b1f907bf33' _.fcp.WorkbookFingerprinting.true...creator-author-id='09e5fb53468cd20c96bfdf015731aca4f9377ab65b2a295fe6e469b1f907bf33' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='8313193a3d4e49ec9b9157ed74d0a9c6cdd6dc838d9254925989add619e27313' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='8313193a3d4e49ec9b9157ed74d0a9c6cdd6dc838d9254925989add619e27313' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_incidents' inline='true' name='federated.13sk01v122m07412qyb8g0barvji' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_incidents' name='textscan.11asdl407bb3a11d8u6dw18ftdhv'>
+            <connection class='textscan' directory='//wsl.localhost/Ubuntu/home/nastasia/visual_pr/data/processed' filename='tableau_incidents.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11asdl407bb3a11d8u6dw18ftdhv' name='tableau_incidents.csv' table='[tableau_incidents#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=';'>
+            <column datatype='integer' name='incident_id' ordinal='0' />
+            <column datatype='string' name='created_at_utc' ordinal='1' />
+            <column datatype='date' name='incident_date' ordinal='2' />
+            <column datatype='string' name='verdict' ordinal='3' />
+            <column datatype='integer' name='is_false_positive' ordinal='4' />
+            <column datatype='string' name='incident_type' ordinal='5' />
+            <column datatype='string' name='severity' ordinal='6' />
+            <column datatype='string' name='source_severity' ordinal='7' />
+            <column datatype='string' name='source_product' ordinal='8' />
+            <column datatype='string' name='resolution_team' ordinal='9' />
+            <column datatype='string' name='response_phase' ordinal='10' />
+            <column datatype='string' name='detection_name' ordinal='11' />
+            <column datatype='real' name='incident_count' ordinal='12' />
+            <column datatype='string' name='closed_at_utc' ordinal='13' />
+            <column datatype='real' name='sla_resolution_raw' ordinal='14' />
+            <column datatype='real' name='sla_acknowledgement_raw' ordinal='15' />
+            <column datatype='integer' name='calendar_year' ordinal='16' />
+            <column datatype='integer' name='calendar_month' ordinal='17' />
+            <column datatype='integer' name='calendar_quarter' ordinal='18' />
+            <column datatype='integer' name='calendar_week' ordinal='19' />
+            <column datatype='integer' name='calendar_weekday' ordinal='20' />
+            <column datatype='integer' name='calendar_day_type' ordinal='21' />
+            <column datatype='date' name='created_date' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incident_id]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_utc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at_utc]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>created_at_utc</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[incident_date]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verdict]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>verdict</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_false_positive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_false_positive]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>is_false_positive</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_type]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[severity]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>severity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_severity]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>source_severity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_product]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>source_product</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resolution_team]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>resolution_team</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response_phase</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response_phase]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>response_phase</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_name]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>detection_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[incident_count]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>incident_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closed_at_utc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[closed_at_utc]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>closed_at_utc</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sla_resolution_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sla_resolution_raw]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>sla_resolution_raw</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sla_acknowledgement_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sla_acknowledgement_raw]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>sla_acknowledgement_raw</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_month]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_month</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_quarter]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_quarter</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_week]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_week</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_weekday]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_weekday</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_day_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_day_type]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>calendar_day_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[created_date]</local-name>
+            <parent-name>[tableau_incidents.csv]</parent-name>
+            <remote-alias>created_date</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_incidents.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[calendar_month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_quarter]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_week]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[incident_id]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+      <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:verdict:nk]' type='palette'>
+            <map to='#305d8a'>
+              <bucket>&quot;False Positive&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;Не указан&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;Решён&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;Дубликат&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;Не решён&quot;</bucket>
+            </map>
+            <map to='#9bc7e4'>
+              <bucket>&quot;Закрыт по совокупности инцидентов&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Закрыт из родительской атаки&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:verdict:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#2a5783'>
+              <multibucket>
+                <bucket>&quot;False Positive&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#3d6a98'>
+              <multibucket>
+                <bucket>&quot;Не указан&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4878a6'>
+              <multibucket>
+                <bucket>&quot;Решён&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#5485b2'>
+              <multibucket>
+                <bucket>&quot;Дубликат&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#89b8da'>
+              <multibucket>
+                <bucket>&quot;Не решён&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#a5cfe9'>
+              <multibucket>
+                <bucket>&quot;Закрыт по совокупности инцидентов&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b9ddf1'>
+              <multibucket>
+                <bucket>&quot;Закрыт из родительской атаки&quot;</bucket>
+                <bucket>&quot;[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_incidents.csv' id='tableau_incidents.csv_63695B95621943DA83000B3B3037ABBA'>
+            <properties context=''>
+              <relation connection='textscan.11asdl407bb3a11d8u6dw18ftdhv' name='tableau_incidents.csv' table='[tableau_incidents#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=';'>
+                  <column datatype='integer' name='incident_id' ordinal='0' />
+                  <column datatype='string' name='created_at_utc' ordinal='1' />
+                  <column datatype='date' name='incident_date' ordinal='2' />
+                  <column datatype='string' name='verdict' ordinal='3' />
+                  <column datatype='integer' name='is_false_positive' ordinal='4' />
+                  <column datatype='string' name='incident_type' ordinal='5' />
+                  <column datatype='string' name='severity' ordinal='6' />
+                  <column datatype='string' name='source_severity' ordinal='7' />
+                  <column datatype='string' name='source_product' ordinal='8' />
+                  <column datatype='string' name='resolution_team' ordinal='9' />
+                  <column datatype='string' name='response_phase' ordinal='10' />
+                  <column datatype='string' name='detection_name' ordinal='11' />
+                  <column datatype='real' name='incident_count' ordinal='12' />
+                  <column datatype='string' name='closed_at_utc' ordinal='13' />
+                  <column datatype='real' name='sla_resolution_raw' ordinal='14' />
+                  <column datatype='real' name='sla_acknowledgement_raw' ordinal='15' />
+                  <column datatype='integer' name='calendar_year' ordinal='16' />
+                  <column datatype='integer' name='calendar_month' ordinal='17' />
+                  <column datatype='integer' name='calendar_quarter' ordinal='18' />
+                  <column datatype='integer' name='calendar_week' ordinal='19' />
+                  <column datatype='integer' name='calendar_weekday' ordinal='20' />
+                  <column datatype='integer' name='calendar_day_type' ordinal='21' />
+                  <column datatype='date' name='created_date' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20261014T132123' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20261014T132123' name='Clipboard_20261014T132123leaf'>
+            <connection class='textscan' directory='C:/Users/755E~1/AppData/Local/Temp/TableauTemp/0erzqy21vngpyq1dl6sx11b7nawx' filename='Clipboard_20261014T132123.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <relation connection='Clipboard_20261014T132123leaf' name='Clipboard_20261014T132123#txt' table='[Clipboard_20261014T132123#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU' separator='&#9;'>
+            <column datatype='string' name='Month of incident_date' ordinal='0' />
+            <column datatype='string' name='verdict' ordinal='1' />
+            <column datatype='string' name='Distinct count of incident_id' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20261014T132123#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month of incident_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month of incident_date]</local-name>
+            <parent-name>[Clipboard_20261014T132123#txt]</parent-name>
+            <remote-alias>Month of incident_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[Clipboard_20261014T132123]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verdict]</local-name>
+            <parent-name>[Clipboard_20261014T132123#txt]</parent-name>
+            <remote-alias>verdict</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[Clipboard_20261014T132123]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distinct count of incident_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Distinct count of incident_id]</local-name>
+            <parent-name>[Clipboard_20261014T132123#txt]</parent-name>
+            <remote-alias>Distinct count of incident_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[Clipboard_20261014T132123]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clipboard_20261014T132123' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20261014T132123]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Clipboard_20261014T132123' id='Clipboard_20261014T132123'>
+            <properties context=''>
+              <relation connection='Clipboard_20261014T132123leaf' name='Clipboard_20261014T132123#txt' table='[Clipboard_20261014T132123#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU' separator='&#9;'>
+                  <column datatype='string' name='Month of incident_date' ordinal='0' />
+                  <column datatype='string' name='verdict' ordinal='1' />
+                  <column datatype='string' name='Distinct count of incident_id' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Segoe WPC,Segoe UI,sans-serif'>Карточки по вердиктам.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_incidents' name='federated.13sk01v122m07412qyb8g0barvji' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13sk01v122m07412qyb8g0barvji'>
+            <column caption='AVG(0)' datatype='real' name='[Calculation_0738652378177537]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='AVG(0)' />
+            </column>
+            <column caption='AVG(0)' datatype='real' name='[Calculation_0738652378984451]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='AVG(0)' />
+            </column>
+            <column-instance column='[incident_id]' derivation='Count' name='[cnt:incident_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[incident_id]' derivation='CountD' name='[ctd:incident_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[verdict]' derivation='CountD' name='[ctd:verdict:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[incident_id]' role='dimension' type='ordinal' />
+            <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0738652378177537]' derivation='User' name='[usr:Calculation_0738652378177537:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0738652378984451]' derivation='User' name='[usr:Calculation_0738652378984451:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' direction='DESC' using='[federated.13sk01v122m07412qyb8g0barvji].[cnt:incident_id:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]' field-type='quantitative' fold='true' max='0.0' min='0.0' range-type='fixed' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]' field-type='quantitative' max='0.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='1904' />
+            <format attr='cell-h' value='1904' />
+            <format attr='cell' value='238' />
+            <format attr='cell-q' value='1190' />
+            <format attr='text-format' field='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of incident_id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:verdict:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6e6e6' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-disallow' y-axis-name='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+              <wedge-size column='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' />
+              <color column='[federated.13sk01v122m07412qyb8g0barvji].[:Measure Names]' />
+              <text column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of incident_id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:verdict:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12'>&lt;</run>
+                <run fontsize='12'>[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]</run>
+                <run fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#f5f5f5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-disallow' y-axis-name='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' />
+              <text column='[federated.13sk01v122m07412qyb8g0barvji].[ctd:verdict:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of incident_id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:verdict:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>AVG(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+                <run fontsize='12'>Æ </run>
+                <run fontsize='10' italic='true'>карточек</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:verdict:qk]>]]></run>
+                <run fontsize='12'>Æ </run>
+                <run fontsize='10' italic='true'>вердиктов</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.53773480653762817' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6e6e6' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378177537:qk] + [federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652378984451:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{91D3B7BF-8B7D-4FBF-B413-AC240D60DEC9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Легенда&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_incidents' name='federated.13sk01v122m07412qyb8g0barvji' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13sk01v122m07412qyb8g0barvji'>
+            <column caption='avg(1)' datatype='real' name='[Calculation_0738652381765639]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column caption='avg(0)' datatype='real' name='[Calculation_0738652404133898]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column-instance column='[incident_id]' derivation='Count' name='[cnt:incident_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[incident_id]' derivation='CountD' name='[ctd:incident_id:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[incident_id]' role='dimension' type='ordinal' />
+            <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0738652381765639]' derivation='User' name='[usr:Calculation_0738652381765639:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0738652404133898]' derivation='User' name='[usr:Calculation_0738652404133898:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' direction='DESC' using='[federated.13sk01v122m07412qyb8g0barvji].[cnt:incident_id:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652381765639:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='10.0' max='30.0' min='0.0' minor-origin='0.0' minor-show='false' minor-spacing='1.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652381765639:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652404133898:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='90' />
+            <format attr='cell-h' value='30' />
+            <format attr='cell' value='30' />
+            <format attr='cell-q' value='150' />
+            <format attr='text-format' field='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='333' />
+                <format attr='maxwidth' value='333' />
+                <format attr='minheight' value='210' />
+                <format attr='maxheight' value='210' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652381765639:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+              <text column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652404133898:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>verdict:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of incident_id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>avg(0):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652404133898:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#333333' fontsize='11'>&lt;</run>
+                <run fontcolor='#333333' fontsize='11'>[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]</run>
+                <run fontcolor='#333333' fontsize='11'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]</rows>
+        <cols>([federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652381765639:qk] + [federated.13sk01v122m07412qyb8g0barvji].[usr:Calculation_0738652404133898:qk])</cols>
+      </table>
+      <simple-id uuid='{03A7DFD0-454C-4437-860C-0A05A90F031C}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_incidents' name='federated.13sk01v122m07412qyb8g0barvji' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13sk01v122m07412qyb8g0barvji'>
+            <column-instance column='[incident_id]' derivation='CountD' name='[ctd:incident_id:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[incident_date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[incident_id]' role='dimension' type='ordinal' />
+            <column-instance column='[incident_date]' derivation='Month' name='[mn:incident_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' field-type='quantitative' max='48073' range-type='fixedmax' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]' scope='rows' value='количество карточек' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]' value='66' />
+            <format attr='text-format' field='[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]' value='iLLL' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='height-header' value='68' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]' value='true' />
+            <format attr='text-format' field='[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]' value='' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+              <lod column='[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>Month of incident_date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>verdict:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Distinct count of incident_id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#333333' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]</rows>
+        <cols>[federated.13sk01v122m07412qyb8g0barvji].[mn:incident_date:ok]</cols>
+      </table>
+      <simple-id uuid='{4993D942-49D4-466D-92A1-3099F85F4EE8}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_incidents' name='federated.13sk01v122m07412qyb8g0barvji' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13sk01v122m07412qyb8g0barvji'>
+            <column-instance column='[incident_id]' derivation='CountD' name='[ctd:incident_id:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[incident_id]' role='dimension' type='ordinal' />
+            <column-instance column='[source_product]' derivation='None' name='[none:source_product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[verdict]' derivation='None' name='[none:verdict:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[source_product]' role='dimension' type='nominal' />
+            <column datatype='string' name='[verdict]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13sk01v122m07412qyb8g0barvji].[none:source_product:nk]</rows>
+        <cols>[federated.13sk01v122m07412qyb8g0barvji].[ctd:incident_id:qk]</cols>
+      </table>
+      <simple-id uuid='{C58A88F3-FC0C-4771-AD40-46F0E7BF4EE1}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7B68228B-B37C-4283-A2D4-76AF7DB88A6D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                <zone h='74000' id='3' name='Sheet 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24000' id='8' name='Sheet 2' w='98400' x='800' y='75000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4F8C1135-5308-4C76-A0BD-6DAA0A9072E2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='260'>
+            <card pane-specification-id='1' param='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]&#10;[federated.13sk01v122m07412qyb8g0barvji].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DDDCC1D9-2173-4E75-9E21-0F709F3A508C}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A8C82F4-9660-438D-8832-82A896E5F611}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='178'>
+            <card pane-specification-id='0' param='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{84EC1644-974A-46C4-9901-32D2DE249691}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13sk01v122m07412qyb8g0barvji].[none:verdict:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7530322A-A844-41D1-A680-A8C1F7279CE6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{A56ACF0B-FE60-49D1-AB18-10A2E458396F}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4E3FC5F-6017-445D-9553-560DE24F58EC}' />
+    </window>
+  </windows>
+</workbook>
